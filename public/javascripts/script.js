@@ -8,7 +8,7 @@ $(function(){
 		$.post('/formsubmit', $(this).serialize(), function(data){
 			console.log(data);
 
-			// if there was an erros, show the error
+			// if there was an error, show the error
 			if(data.error){
 				$('#message').text(data.error)
 			}
